@@ -1,0 +1,149 @@
+/* ===== RESPONSIVE STYLE ===== */
+
+@media (max-width:1600px) {
+	
+}
+
+@media (max-width:1440px) {
+	html {font-size: 0.7vw}
+}
+
+@media (max-width:1366px) {
+	
+}
+
+@media (max-width:1200px) {
+
+}
+
+@media (max-width:1024px) {
+	
+}
+
+@media (max-width:991px) {	
+	
+}
+
+@media (max-width:768px) {
+	html {font-size:10px;}
+	/* Mobile menu */
+	.mobile-btn {width:25px;display:block;}
+	.mobile-btn span{
+		display: block;
+		height: 2px;
+		background-color: var(--black);
+		border-radius: 2px;		
+	}
+	.mobile-btn span:not(:last-child){margin-bottom:5px;}
+	.nav {
+		position: fixed;
+		display:block;
+		-webkit-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-o-transform: translateX(100%);
+		transform: translateX(100%);
+		visibility: hidden;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #F2F4F6;
+		padding: 60px 20px;
+		-webkit-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+		z-index: 120;
+		overflow-y:auto;
+	}
+	.nav.active{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+		visibility: visible;
+	}
+	.close-menu{
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	.close-menu::before,
+	.close-menu::after{
+		content: '';
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background-color: var(--black);
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+	.close-menu::before{
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.close-menu::after{
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	.menu {flex-direction: column;}
+	.menu li {margin: 0 0 30px 0;}
+	.menu li a{
+		font-size: 16px;
+		text-transform:uppercase;
+		color: var(--black);
+	}
+	.mobile-menu__content {display:block;}
+	/* // Mobile menu */
+
+	.menu-sub-list {
+		position: relative;
+		margin-top: 20px;
+	}
+	.menu-sub-list li {
+	    margin: 0 0 10px;
+	}
+	.menu-sub-list li:last-child {
+	    margin:0;
+	}
+	.menu-sub-list li a {
+		background:transparent;
+		border-bottom:none;
+		padding:0.5em 1em;
+	}
+	.have-sub .select-arrow-icon {
+	    color: #000;
+	}
+
+	.sm-hide {display:none;}
+	.sm-show {display:block;}
+	.sm-show.flex {display:flex;}
+
+	
+}
+
+@media (max-width:767px) {	
+	
+}
+
+@media (max-width:640px) {	
+	
+}
+
+@media (max-width:600px) {	
+	
+}
+
+@media (max-width:480px) {	
+	
+}
+
+@media (max-width:320px) {	
+	
+}
